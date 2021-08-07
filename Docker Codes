@@ -1,0 +1,42 @@
+to install        = sudo apt install docker.io
+
+version of docker = docker –version
+
+status control    = sudo systemctl status docker  
+
+to activate       = sudo systemctl enable –now docker
+
+to list containers= docker ps -a  
+                    docker ps –all
+                    docker container ls
+
+to list active    = docker ps
+containers
+
+test sample       = sudo docker run hello-world
+
+to see IMAGES     = sudo docker images
+
+to remove an file = docker rm 3e (rm : remove) (3e:first two charecter of ID) 		
+
+to remove allfiles= docker container rm $(docker container ls -aq)
+
+to be in ubuntu system = docker run -it ubuntu (-it : interactive terminal)
+                         cat os-release 		
+
+to hold 3 second and close it = docker run ubuntu slepp 3	
+
+to have docker log info       = docker container logs f4dd (f4dd : ID)
+
+to see sample application     = docker run -it gkandemir/interactive-terminal-app 
+
+docker PORT MAPPING inner and outer IP = docker run -p DIS_PORT:IC_PORT mongo
+                                         docker run -p 27018:27017 mongo
+
+statelse and volume samples = docker run mongo (stateless)
+                              docker stop mongo
+                              docker run mongo (stateless)
+                              docker stop mongo
+                              docker run -v/opt/data:/data/db mongo
+                              docker stop mongo
+                              docker run -v/opt/data:/data/db mongo
