@@ -1,0 +1,32 @@
+*****************
+ZSH (Z-Shell)... 
+
+sudo apt install zsh
+
+*****************
+OH-MY-ZSH...
+
+sudo apt install curl wget git
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+cd ~/.oh-my-zsh/themes/
+
+ls -a
+
+git clone https://github.com/jan-auer/zsh-multiline.git ~/.oh-my-zsh/custom/themes/zsh-multiline
+
+*****************
+ZSH-MULTILINE...
+
+vi ~/.zshrc
+
+to change the ZSH_THEME with zsh-multiline/multiline theme = ZSH_THEME="zsh-multiline/multiline"
+
+source ~/.zshrc
+
+*****************
+TO REMOVE OH-MY-ZSH in Ubuntu Linux...
+
+uninstall oh_my_zsh
+*****************
